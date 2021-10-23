@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ie-homeworks/static/css/main.c28c0c1f.chunk.css",
+    "main.js": "/ie-homeworks/static/js/main.4dd1da1f.chunk.js",
+    "main.js.map": "/ie-homeworks/static/js/main.4dd1da1f.chunk.js.map",
+    "runtime-main.js": "/ie-homeworks/static/js/runtime-main.52f6399c.js",
+    "runtime-main.js.map": "/ie-homeworks/static/js/runtime-main.52f6399c.js.map",
+    "static/js/2.1d47734a.chunk.js": "/ie-homeworks/static/js/2.1d47734a.chunk.js",
+    "static/js/2.1d47734a.chunk.js.map": "/ie-homeworks/static/js/2.1d47734a.chunk.js.map",
+    "index.html": "/ie-homeworks/index.html",
+    "static/css/main.c28c0c1f.chunk.css.map": "/ie-homeworks/static/css/main.c28c0c1f.chunk.css.map",
+    "static/js/2.1d47734a.chunk.js.LICENSE.txt": "/ie-homeworks/static/js/2.1d47734a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52f6399c.js",
+    "static/js/2.1d47734a.chunk.js",
+    "static/css/main.c28c0c1f.chunk.css",
+    "static/js/main.4dd1da1f.chunk.js"
+  ]
+}
