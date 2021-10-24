@@ -8,7 +8,7 @@ class Home extends React.Component {
             <div id='inner_div'>
                 <h1>Hello, World!</h1>
                 <label htmlFor='drop_down' style={style}>What color?</label><br/>
-                <select id='drop_down' title='Choose color' data-live-search='true' className='selectpicker show-tick' onChange={() => {document.getElementById('root').style='background-color: ' + document.getElementById('drop_down').value; document.getElementById('inner_div').style.color=((document.getElementById('drop_down').value === 'Black') ? 'White' : 'Black')}}>
+                <select id='drop_down' data-size='10' title='Choose color' data-live-search='true' className='selectpicker show-tick' onChange={() => {document.getElementById('root').style='background-color: ' + document.getElementById('drop_down').value; document.getElementById('inner_div').style.color=((document.getElementById('drop_down').value === 'Black') ? 'White' : 'Black')}}>
                     {colors.map(function(color, i){
                         return <option style={{background: color}} value={color} key={i}>{color}</option>;
                     })}
