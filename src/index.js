@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Question2 from './2.js';
+import Question5 from './5.js';
   
 let destination = document.querySelector("#container")
   
 ReactDOM.render(
     <div>
-     <Question2/>
+     <Question5/>
     </div>,
     destination
 );
