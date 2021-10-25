@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/ie-homeworks/static/css/main.c28c0c1f.chunk.css",
-    "main.js": "/ie-homeworks/static/js/main.c66ff5fd.chunk.js",
-    "main.js.map": "/ie-homeworks/static/js/main.c66ff5fd.chunk.js.map",
+    "main.css": "/ie-homeworks/static/css/main.2da0729e.chunk.css",
+    "main.js": "/ie-homeworks/static/js/main.5176be60.chunk.js",
+    "main.js.map": "/ie-homeworks/static/js/main.5176be60.chunk.js.map",
     "runtime-main.js": "/ie-homeworks/static/js/runtime-main.52f6399c.js",
     "runtime-main.js.map": "/ie-homeworks/static/js/runtime-main.52f6399c.js.map",
-    "static/js/2.1d47734a.chunk.js": "/ie-homeworks/static/js/2.1d47734a.chunk.js",
-    "static/js/2.1d47734a.chunk.js.map": "/ie-homeworks/static/js/2.1d47734a.chunk.js.map",
+    "static/css/2.47829c98.chunk.css": "/ie-homeworks/static/css/2.47829c98.chunk.css",
+    "static/js/2.29fa9c02.chunk.js": "/ie-homeworks/static/js/2.29fa9c02.chunk.js",
+    "static/js/2.29fa9c02.chunk.js.map": "/ie-homeworks/static/js/2.29fa9c02.chunk.js.map",
     "index.html": "/ie-homeworks/index.html",
-    "static/css/main.c28c0c1f.chunk.css.map": "/ie-homeworks/static/css/main.c28c0c1f.chunk.css.map",
-    "static/js/2.1d47734a.chunk.js.LICENSE.txt": "/ie-homeworks/static/js/2.1d47734a.chunk.js.LICENSE.txt"
+    "static/css/2.47829c98.chunk.css.map": "/ie-homeworks/static/css/2.47829c98.chunk.css.map",
+    "static/css/main.2da0729e.chunk.css.map": "/ie-homeworks/static/css/main.2da0729e.chunk.css.map",
+    "static/js/2.29fa9c02.chunk.js.LICENSE.txt": "/ie-homeworks/static/js/2.29fa9c02.chunk.js.LICENSE.txt",
+    "static/media/click.07cda4b8.wav": "/ie-homeworks/static/media/click.07cda4b8.wav"
   },
   "entrypoints": [
     "static/js/runtime-main.52f6399c.js",
-    "static/js/2.1d47734a.chunk.js",
-    "static/css/main.c28c0c1f.chunk.css",
-    "static/js/main.c66ff5fd.chunk.js"
+    "static/css/2.47829c98.chunk.css",
+    "static/js/2.29fa9c02.chunk.js",
+    "static/css/main.2da0729e.chunk.css",
+    "static/js/main.5176be60.chunk.js"
   ]
 }
