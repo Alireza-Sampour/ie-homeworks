@@ -42,7 +42,7 @@ class HomePage extends React.Component {
           return (
             <div className="col-md-4" key={i}>
               <div className="service-card">
-                <Link to={this.props.routes[i].path}>
+                <Link to={`/${this.props.routes[i].path}`}>
                   <div className="title">{question.title}</div>
                 </Link>
                 <p className="bodyin">

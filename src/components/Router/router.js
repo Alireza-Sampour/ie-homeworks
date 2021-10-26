@@ -7,20 +7,21 @@ import Home from "../HomePage/HomePage.js";
 class MainRouter extends React.Component {
   render() {
     const routes = [
-      { path: "car-price" },
-      { path: "color-changer" },
-      { path: "prayer-times" },
-      { path: "social-media" },
-      { path: "metronome" },
-      { path: "loan-calculator" },
-      { path: "currency-converter" },
+      { path: "car-price", component: ""},
+      { path: "color-changer", component: App2 },
+      { path: "prayer-times", component: "" },
+      { path: "social-media", component: "" },
+      { path: "metronome", component: App5 },
+      { path: "loan-calculator", component: "" },
+      { path: "currency-converter", component: "" },
     ];
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={() => <Home routes={routes} />} />
-          <Route path={`/${routes[1].path}`} component={App2} />
-          <Route path={`/${routes[4].path}`} component={App5} />
+          {routes.map(function(route, i){
+              return <Route key={i} path={`/${routes[i].path}`} component={route.component} />;
+          })}
         </Switch>
       </Router>
     );
