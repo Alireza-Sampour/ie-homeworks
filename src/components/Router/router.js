@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import App2 from "../2/2.js";
 import App5 from "../5/5.js";
 import Home from "../HomePage/HomePage.js";
@@ -22,6 +22,7 @@ class MainRouter extends React.Component {
           {routes.map(function(route, i){
               return <Route key={i} path={`/${routes[i].path}`} component={route.component} />;
           })}
+          <Route path="*" component={() => <Redirect to="/" />} />
         </Switch>
       </Router>
     );
