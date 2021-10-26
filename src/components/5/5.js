@@ -1,9 +1,6 @@
 import React from 'react';
-import click from './click.wav';
+import click from '../../assets/click.wav';
 import RoundSlider from './RoundSlider.js';
-
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css'
 
 class Metronome extends React.Component {
     constructor(props) {
@@ -15,6 +12,10 @@ class Metronome extends React.Component {
         };
 
         this.click = new Audio(click);
+    }
+
+    componentDidMount() {
+        document.title = "Metronome"
     }
 
     handleBpmChange = event => {
@@ -38,6 +39,10 @@ class Metronome extends React.Component {
             this.setState({ playing: true }, () => this.click.play());
         }
     };
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
 
     render() {
         return (
@@ -64,7 +69,5 @@ class Metronome extends React.Component {
         );
     }
 }
-
-document.title = "Metronome"
 
 export default Metronome;
