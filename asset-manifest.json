@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ie-homeworks/static/css/main.8d9e35e0.chunk.css",
+    "main.css": "/ie-homeworks/static/css/main.9272b3ad.chunk.css",
     "main.js": "/ie-homeworks/static/js/main.5c77a1ec.chunk.js",
     "main.js.map": "/ie-homeworks/static/js/main.5c77a1ec.chunk.js.map",
     "runtime-main.js": "/ie-homeworks/static/js/runtime-main.52f6399c.js",
@@ -10,7 +10,7 @@
     "static/js/2.06c1ec25.chunk.js.map": "/ie-homeworks/static/js/2.06c1ec25.chunk.js.map",
     "index.html": "/ie-homeworks/index.html",
     "static/css/2.75ae85d4.chunk.css.map": "/ie-homeworks/static/css/2.75ae85d4.chunk.css.map",
-    "static/css/main.8d9e35e0.chunk.css.map": "/ie-homeworks/static/css/main.8d9e35e0.chunk.css.map",
+    "static/css/main.9272b3ad.chunk.css.map": "/ie-homeworks/static/css/main.9272b3ad.chunk.css.map",
     "static/js/2.06c1ec25.chunk.js.LICENSE.txt": "/ie-homeworks/static/js/2.06c1ec25.chunk.js.LICENSE.txt",
     "static/media/index.css": "/ie-homeworks/static/media/Vazir-Regular.6ac404eb.eot",
     "static/media/click.07cda4b8.wav": "/ie-homeworks/static/media/click.07cda4b8.wav"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.52f6399c.js",
     "static/css/2.75ae85d4.chunk.css",
     "static/js/2.06c1ec25.chunk.js",
-    "static/css/main.8d9e35e0.chunk.css",
+    "static/css/main.9272b3ad.chunk.css",
     "static/js/main.5c77a1ec.chunk.js"
   ]
 }
