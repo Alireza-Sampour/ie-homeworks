@@ -1,7 +1,10 @@
+*{
+  font-family: Vazir; 
+}
+
 body {
   padding: 50px;
   background-color: white;
-  font-family: Vazir;
 }
 
 #container {
