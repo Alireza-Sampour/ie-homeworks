@@ -1,5 +1,5 @@
-*{
-  font-family: Vazir; 
+* {
+  font-family: Vazir;
 }
 
 body {
@@ -14,11 +14,11 @@ body {
 
 @font-face {
   font-family: Vazir;
-  src: url('../font/Vazir-Regular.eot');
-  src: url('../font/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../font/Vazir-Regular.woff2') format('woff2'),
-       url('../font/Vazir-Regular.woff') format('woff'),
-       url('../font/Vazir-Regular.ttf') format('truetype');
+  src: url("../font/Vazir-Regular.eot");
+  src: url("../font/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Vazir-Regular.woff2") format("woff2"),
+    url("../font/Vazir-Regular.woff") format("woff"),
+    url("../font/Vazir-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,23 +53,31 @@ body {
   direction: rtl;
   text-align: right;
 }
+
 .title {
   padding: 15px;
   font-size: 24px;
   border-bottom: 2px solid #fad961;
   color: #fff;
 }
+.title:hover {
+  color: #fad961;
+}
+
 .bodyin {
   font-size: 16px;
   padding: 15px;
 }
+
 .service-card:hover {
-  transform: translateY(-1px);
+  transform: translateY(-5px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .row {
   display: flex;
 }
+
 @media screen and (max-width: 900px) {
   .row {
     display: flex;
