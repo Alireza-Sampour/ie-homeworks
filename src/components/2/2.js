@@ -2,7 +2,7 @@ import React from 'react';
 import '../../assets/css/bootstrap.min.css';
 import '../../assets/css/bootstrap-select.min.css';
 
-class Home extends React.Component {
+class ColorPicker extends React.Component {
     componentDidMount() {
         window.$('.selectpicker').selectpicker();
         document.title = "Color Picker";
@@ -28,4 +28,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default ColorPicker;
