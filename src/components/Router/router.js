@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import App2 from "../2/2.js";
+import App3 from "../3/3.js";
 import App5 from "../5/5.js";
 import Home from "../HomePage/HomePage.js";
 
@@ -9,7 +10,7 @@ class MainRouter extends React.Component {
     const routes = [
       { path: "car-price", component: ""},
       { path: "color-changer", component: App2 },
-      { path: "prayer-times", component: "" },
+      { path: "prayer-times", component: App3 },
       { path: "social-media", component: "" },
       { path: "metronome", component: App5 },
       { path: "loan-calculator", component: "" },
