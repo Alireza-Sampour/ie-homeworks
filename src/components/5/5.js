@@ -46,7 +46,7 @@ class Metronome extends React.Component {
 
     render() {
         return (
-            <div className="metronome">
+            <div className="metronome" id="onCenter">
                 <div className="bpm-slider">
                     <RoundSlider 
                         sliderType="min-range" 
