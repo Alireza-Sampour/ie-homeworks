@@ -9,7 +9,6 @@ class PrayerTimes extends React.Component {
     this.state = {
       weekdays_list: null,
       prayertimes_list: null,
-      today: null,
       persian_weekdays: [
         "شنبه",
         "یک‌شنبه",
@@ -36,15 +35,6 @@ class PrayerTimes extends React.Component {
     let promises = [];
     for (let i = 1; i <= 7; i++) {
       let temp_date = date.toLocaleDateString().split("/");
-      if (i === 1) {
-        this.setState({
-          today: gregorian_to_jalali(
-            parseInt(temp_date[2]),
-            parseInt(temp_date[0]),
-            parseInt(temp_date[1])
-          ).join("/"),
-        });
-      }
       temp_date = `${temp_date[1]}-${temp_date[0]}-${temp_date[2]}`;
       promises.push(
         `https://api.aladhan.com/v1/timingsByCity/${temp_date}?city=Ilam&country=Iran&method=7`
@@ -118,7 +108,7 @@ class PrayerTimes extends React.Component {
           <h6
             style={{ textAlign: "center", marginTop: "10%", fontSize: "35px" }}
           >
-            امروز {this.state.today}
+            امروز {new Date().toLocaleDateString("fa-Ir")}
           </h6>
         </div>
       </div>
