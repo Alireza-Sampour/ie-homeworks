@@ -17,6 +17,7 @@ header {
   margin: 0 auto;
   max-width: 64em;
   padding: 0;
+  padding: 20px;
 }
 
 #custom_li {

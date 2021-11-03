@@ -116,7 +116,7 @@ class PrayerTimes extends React.Component {
             {this.state.prayertimes_list}
           </ol>
           <h6
-            style={{ textAlign: "center", marginTop: "10%", fontSize: "25px" }}
+            style={{ textAlign: "center", marginTop: "10%", fontSize: "35px" }}
           >
             امروز {this.state.today}
           </h6>
