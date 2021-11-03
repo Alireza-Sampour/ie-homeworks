@@ -2,9 +2,9 @@
   font-family: Vazir;
 }
 
-body {
+#onCenter {
+  margin-top: 50px;
   padding: 50px;
-  background-color: white;
 }
 
 #container {
