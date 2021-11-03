@@ -1,5 +1,4 @@
 import React from "react";
-import { gregorian_to_jalali } from "./helper/date_converter.js";
 import { Link } from "react-router-dom";
 import "./style.css";
 
