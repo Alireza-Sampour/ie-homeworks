@@ -1,0 +1,152 @@
+header {
+  display: flex;
+  align-items: center;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  justify-content: center;
+  margin-bottom: 2em;
+  background: #000;
+  color: #fff;
+  min-height: 10vh;
+  text-align: center;
+}
+
+#ulol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0;
+}
+
+#custom_li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(20px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+ul.weekdays {
+  margin-bottom: 1em;
+}
+
+ul.weekdays li {
+  height: 4vw;
+}
+
+ol.day-grid li {
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  height: 5vw;
+  max-height: 125px;
+  border-radius: 15px;
+}
+
+.day-grid li:hover {
+  transform: translateY(-5px);
+}
+
+ul.weekdays {
+  cursor: default;
+  border: none;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+  ul,
+  ol {
+    grid-gap: 0.25em;
+  }
+
+  ul.weekdays li {
+    font-size: 0;
+  }
+
+  ul.weekdays {
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+  }
+}
+
+.prayTime h1,
+.prayTime h2 {
+  padding: 0.5em;
+}
+
+.prayTime ul {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1em;
+}
+
+.prayTime ul li {
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.48);
+  margin: 0.5em;
+  padding: 0.25em;
+  width: 6.5em;
+}
+
+.prayTime ul li h3 {
+  padding: 0.25em 0;
+}
+
+.date {
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.clock h2 {
+  font-size: 8em;
+  font-weight: 600;
+  display: inline;
+}
+
+.clock span {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.1em;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  color: #444;
+  font-size: 11px;
+}
+
+@media only screen and (min-width: 360px) {
+  .App {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .App {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .App {
+    font-size: 15px;
+  }
+}
