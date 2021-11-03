@@ -4,6 +4,7 @@ import App2 from "../2/2.js";
 import App3 from "../3/3.js";
 import App5 from "../5/5.js";
 import Home from "../HomePage/HomePage.js";
+import Detail from "../3/helper/detail.js";
 
 class MainRouter extends React.Component {
   render() {
@@ -21,8 +22,9 @@ class MainRouter extends React.Component {
         <Switch>
           <Route exact path="/" component={() => <Home routes={routes} />} />
           {routes.map(function(route, i){
-              return <Route key={i} path={`/${routes[i].path}`} component={route.component} />;
+              return <Route key={i} exact path={`/${routes[i].path}`} component={route.component} />;
           })}
+          <Route exact path={`/prayer-times/details/:date_param`} component={Detail} />;
           <Route path="*" component={() => <Redirect to="/" />} />
         </Switch>
       </Router>
