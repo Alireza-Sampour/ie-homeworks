@@ -37,7 +37,7 @@ class HomePage extends React.Component {
       },
     ];
     return (
-      <div className="row">
+      <div className="row" id="onCenter">
         {info.map(function (question, i) {
           return (
             <div className="col-md-4" key={i}>
