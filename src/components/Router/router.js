@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import App2 from "../2/2.js";
 import App3 from "../3/3.js";
 import App5 from "../5/5.js";
+import App6 from "../6/6.js";
+import App7 from "../7/7.js";
 import Home from "../HomePage/HomePage.js";
 import Detail from "../3/helper/detail.js";
 
@@ -14,8 +16,8 @@ class MainRouter extends React.Component {
       { path: "prayer-times", component: App3 },
       { path: "social-media", component: "" },
       { path: "metronome", component: App5 },
-      { path: "loan-calculator", component: "" },
-      { path: "currency-converter", component: "" },
+      { path: "loan-calculator", component: App6 },
+      { path: "currency-converter", component: App7 },
     ];
     return (
       <Router basename={process.env.PUBLIC_URL}>
