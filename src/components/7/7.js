@@ -78,6 +78,7 @@ class Currency extends React.Component {
                       <span className="input-group-text">IRR</span>
                     </div>
                     <input
+                      placeholder="قیمت را وارد کنید"
                       type="number"
                       step="1"
                       className="form-control"
