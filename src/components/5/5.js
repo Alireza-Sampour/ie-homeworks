@@ -64,7 +64,7 @@ class Metronome extends React.Component {
                         value={this.state.bpm}
                     />
                 </div>
-                <button className="btn btn-lg btn-success" onClick={this.startStop}>{this.state.playing ? 'Stop' : 'Start'}</button>
+                <button className="css-button-rounded--green" onClick={this.startStop}>{this.state.playing ? 'Stop' : 'Start'}</button>
             </div>
         );
     }
