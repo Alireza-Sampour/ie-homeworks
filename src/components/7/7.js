@@ -51,6 +51,11 @@ class Currency extends React.Component {
           },
         });
       });
+    document.getElementById("root").style.backgroundColor = "#3a86ff";
+  }
+
+  componentWillUnmount() {
+    document.getElementById("root").style.backgroundColor = "white";
   }
 
   render() {
@@ -64,7 +69,7 @@ class Currency extends React.Component {
         <style>{css}</style>
         <div className="row">
           <div className="col-md-6 mx-auto">
-            <div className="card card-body text-center mt-5">
+             <div className="card card-body text-center mt-5" style={{ backgroundColor: "#fff", borderRadius: "5%" }}>
               <h1 className="heading display-4 pb-3">مبدل ارز</h1>
               <form action="" id="currencyForm" onSubmit={this.convertCurrency}>
                 <div className="form-group">
@@ -89,7 +94,7 @@ class Currency extends React.Component {
                   <input
                     type="submit"
                     value="تبدیل کن"
-                    className="btn btn-dark btn-block"
+                    className="css-button-sharp--black"
                     id="currencySubmit"
                   />
                 </div>
