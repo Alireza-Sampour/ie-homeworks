@@ -18,12 +18,12 @@ class Currency extends React.Component {
   }
 
   convertCurrency(e) {
-    const gbAmount = document.getElementById("gbAmount").value;
-    if (gbAmount !== "") {
+    const price = document.getElementById("price").value;
+    if (price !== "") {
       Object.keys(this.state.currency_code_to_id).map(
         (key) =>
           (document.getElementById(this.state.currency_code_to_id[key]).value =
-            (gbAmount / this.state.currency_prices[key]).toFixed(2))
+            (price / this.state.currency_prices[key]).toFixed(2))
       );
     } else {
       Object.keys(this.state.currency_code_to_id).map(
@@ -51,7 +51,7 @@ class Currency extends React.Component {
           },
         });
       });
-    document.getElementById("root").style.backgroundColor = "#3a86ff";
+    document.getElementById("root").style.backgroundColor = "#d2f9f9";
   }
 
   componentWillUnmount() {
@@ -82,7 +82,7 @@ class Currency extends React.Component {
                       type="number"
                       step="1"
                       className="form-control"
-                      id="gbAmount"
+                      id="price"
                       onInput={(e) =>
                         (e.target.value = e.target.value
                           .replace(/[^0-9.]/g, "")
