@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Clock from "./Clock.js";
-import HijriDate from "./HijriDate.js";
+import HijriDate from "./Date.js";
 import PrayTimes from "./PrayTimes.js";
 import "../style.css";
 

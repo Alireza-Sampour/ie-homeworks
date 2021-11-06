@@ -1,5 +1,5 @@
 import React from "react";
-import PrayCard from "./PrayCard";
+import PrayCard from "./Card";
 
 class PrayTimes extends React.Component {
   constructor() {

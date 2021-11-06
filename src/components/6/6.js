@@ -57,13 +57,13 @@ class LoanCalculator extends React.Component {
   }
 
   calculateLoanDetails(p, r, emi) {
-    let totalInterest = 0;
+    let total = 0;
     while (p > 0) {
       let interest = parseFloat(p) * parseFloat(r);
       p = parseFloat(p) - (parseFloat(emi) - interest);
-      totalInterest += interest;
+      total += interest;
     }
-    return totalInterest;
+    return total;
   }
 
   displayDetails() {
@@ -75,25 +75,22 @@ class LoanCalculator extends React.Component {
     let emi = parseFloat(num) / parseFloat(denom);
 
     let payabaleInterest = this.calculateLoanDetails(this.state.P, r, emi);
-    ////////////////////////////////////
-    let opts = "";
-    ////////////////////////////////////
     document.querySelector("#cp").innerText = parseFloat(this.state.P)
-      .toLocaleString("fa-IR", opts)
+      .toLocaleString("fa-IR")
       .replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
 
     document.querySelector("#ci").innerText = parseFloat(payabaleInterest)
-      .toLocaleString("fa-IR", opts)
+      .toLocaleString("fa-IR")
       .replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
 
     document.querySelector("#ct").innerText = parseFloat(
       parseFloat(this.state.P) + parseFloat(payabaleInterest)
     )
-      .toLocaleString("fa-IR", opts)
+      .toLocaleString("fa-IR")
       .replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
 
     document.querySelector("#price").innerText = parseFloat(emi)
-      .toLocaleString("fa-IR", opts)
+      .toLocaleString("fa-IR")
       .replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
 
     this.state.reference.data.datasets[0].data[0] = this.state.P;

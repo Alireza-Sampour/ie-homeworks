@@ -1,6 +1,6 @@
 import React from "react";
 
-class HijriDate extends React.Component {
+class Date extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -46,4 +46,4 @@ class HijriDate extends React.Component {
   }
 }
 
-export default HijriDate;
+export default Date;

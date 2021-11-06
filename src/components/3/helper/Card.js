@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PrayCard({ name, time }) {
+export default function Card({ name, time }) {
   const names = {
     Fajr: "صبح",
     Sunrise: "طلوع",
