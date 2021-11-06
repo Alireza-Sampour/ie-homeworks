@@ -207,6 +207,28 @@ class CarPrice extends React.Component {
                     className="form-control"
                     disabled
                   ></input>
+                  <div className="container">
+                    <div className="mt-4" style={{textAlign: "right", direction:"rtl"}}>
+                      <h5>راهنمای محاسبه قیمت:</h5>
+                      <ul>
+                        <li>
+                          به ازای هر سال فاصله با سال جاری مبلغ ۱۰۰ هزار تومان از قیمت پایه کسر می‌شود.
+                        </li>
+                        <li>
+                          به ازای هر ماه بیمه مبلغ ۵۰۰ هزار تومان به قیمت پایه اضافه می‌شود.
+                        </li>
+                        <li>
+                          به ازای هر کیلومتر کارکرد مبلغ ۳۰ هزار تومان از مبلغ پایه کسر می‌شود.
+                        </li>
+                        <li>
+                          به ازای هر تصادف مبلغ ۱ میلیون تومان از مبلغ پایه کسر می‌شود.
+                        </li>
+                        <li>
+                          در صورت داشتن رنگ مبلغ ۱ میلیون تومان کسر می‌شود.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
