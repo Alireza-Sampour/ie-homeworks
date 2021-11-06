@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import App1 from "../1/1.js";
 import App2 from "../2/2.js";
 import App3 from "../3/3.js";
 import App5 from "../5/5.js";
@@ -11,7 +12,7 @@ import Detail from "../3/helper/detail.js";
 class MainRouter extends React.Component {
   render() {
     const routes = [
-      { path: "car-price", component: ""},
+      { path: "car-price", component: App1},
       { path: "color-changer", component: App2 },
       { path: "prayer-times", component: App3 },
       { path: "social-media", component: "" },
