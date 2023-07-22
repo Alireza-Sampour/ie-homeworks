@@ -10,7 +10,7 @@ class PrayTimes extends React.Component {
   }
   componentWillMount() {
     fetch(
-      `https://api.aladhan.com/v1/timingsByCity/${this.props.selected_date}?city=Ilam&country=Iran&method=7`
+      `https://api.aladhan.com/v1/timingsByCity/${this.props.selected_date}?city=gonabad&country=Iran&method=7`
     )
       .then((response) => response.json())
       .then((result) => {
