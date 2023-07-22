@@ -17,7 +17,7 @@ class Detail extends React.Component {
     return (
       <div className="App">
         <p style={{ marginBottom: "90px", fontSize: "60px" }}>
-          اوقات شرعی به وقت ایلام
+          اوقات شرعی به وقت گناباد
         </p>
         <Clock />
         <HijriDate selected_date={this.props.selected_date} />
