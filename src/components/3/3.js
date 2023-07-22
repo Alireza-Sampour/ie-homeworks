@@ -36,7 +36,7 @@ class PrayerTimes extends React.Component {
       let temp_date = date.toLocaleDateString().split("/");
       temp_date = `${temp_date[1]}-${temp_date[0]}-${temp_date[2]}`;
       promises.push(
-        `https://api.aladhan.com/v1/timingsByCity/${temp_date}?city=Ilam&country=Iran&method=7`
+        `https://api.aladhan.com/v1/timingsByCity/${temp_date}?city=gonabad&country=Iran&method=7`
       );
       date.setDate(new Date().getDate() + i);
     }
